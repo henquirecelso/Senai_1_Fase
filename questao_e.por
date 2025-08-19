@@ -1,13 +1,13 @@
 programa {
   funcao inicio() {
     inteiro cafe, coxinha, halls, docedeleite, calc
-    escreva("Quantas coxinhas foram vendidas: ")
+    escreva("Qual o preço da coxinha: ")
     leia(coxinha)
-    escreva("Quantas cafés foram vendidos: ")
+    escreva("qual o preço do cafe: ")
     leia(cafe)
-    escreva("Quantos halls foram vendidos: ")
+    escreva("qual o preço do halls: ")
     leia(halls)
-    escreva("Quantos doce de leite foram vendidos: ")
+    escreva("qual o preço do doce de leite: ")
     leia(docedeleite)
    
 limpa()
