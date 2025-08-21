@@ -20,8 +20,10 @@ programa {
     leia(senha1)
 
     limpa()
+    escreva("Você se cadastrou com sucesso! \n agora faça login abaixo: \n")
+
     escreva("________________\n")
-    escreva("Digite sua login: \n")
+    escreva("Digite seu usuario: \n")
     escreva("⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺\n")
 
 
@@ -46,10 +48,17 @@ programa {
     limpa()
 
     se (operacao == 1) {
-    escreva("Digite o valor a retirar: ")
-    leia(retirar)
-    conta = conta - retirar
-    escreva("Após a transferencia você possui: $",conta)
+      escreva("Digite o valor a retirar: ")
+      leia(retirar)
+        se (retirar <= conta) {
+        conta = conta - retirar
+        escreva("Após a transferencia você possui: $",conta)
+        }
+          senao{
+            escreva("Você não possui saldo suficiente")
+          }
+
+
     }
     senao{
     escreva("Digite o valor a depositar: ")
@@ -65,6 +74,8 @@ programa {
     leia(resposta)
     se ( resposta == 2)
     continue = falso
+    limpa()
+    escreva("Finalizando programa!")
     
    
 // A variável conta é declarada fora do enquanto, então ela mantém seu valor entre uma repetição e outra.
