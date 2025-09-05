@@ -1,0 +1,16 @@
+.botao-vermelho {
+  background-color: red;       /* Fundo vermelho */
+  color: rgb(0, 0, 0);                /* Texto branco */
+  border: 3px solid rgb(0, 0, 0);     /* Borda branca */
+  padding: 10px 20px;          /* Espaçamento interno */
+  cursor: pointer;             /* Cursor de mãozinha */
+  border-radius: 0;            /* Borda quadrada */
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.botao-vermelho:hover {
+  background-color: darkred;   /* Fundo vermelho escuro no hover */
+}
