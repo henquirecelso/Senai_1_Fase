@@ -10,4 +10,4 @@
 // console.log(`meu nome é ${nome} ${sobrenome} e tenho ${idade} anos`)
 
 
-const frutas = ["banana", "maçã", "laranja", "uva"];cd ..
+const frutas = ["banana", "maçã", "laranja", "uva"];
