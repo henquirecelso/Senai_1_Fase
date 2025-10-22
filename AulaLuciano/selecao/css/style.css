@@ -1,0 +1,26 @@
+#button {
+   background-color: aqua;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+}
+*{
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   background-color:aqua ;
+}
+main{
+   background-color: rgb(81, 195, 199) ;
+}
+nav{
+   background-color: aquamarine;
+}
+
+footer{
+   background-color: blue;
+}
+   
