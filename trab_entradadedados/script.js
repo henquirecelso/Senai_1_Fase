@@ -28,25 +28,12 @@ const handleSubmit = async (event) => {
 
   if (existe) {
     alert("Login Efetuado!");
+    window.location.href = "proxpagina.html";
   } else {
-    try {
-      await fetch('https://api.sheetmonkey.io/form/vYxUmYrnP6iBLN4T9PF9B5', {
-        method: 'POST',
-        headers: {
-          'accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ usuario, senha }),
-      });
-      alert("Usuário cadastrado com sucesso!");
-    } catch (error) {
-      console.error("Erro ao cadastrar usuário:", error);
-      alert("Erro ao cadastrar usuário.");
+    alert("Usuario ou senha errado! tente novamente ou faça cadastro!")
+    } 
     }
-  }
-};
-
-// Certifique-se que o DOM está carregado antes de adicionar o event listener
+  
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
   if (form) {
@@ -55,3 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("Formulário não encontrado no documento.");
   }
 });
+
+
+
+
+
