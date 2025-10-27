@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="visual.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Gestão de economia</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Login e Cadastro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <style>
-        body{
-            background-image: url(imgs/fundo-abstrato-aquarela-pintado-a-mao_23-2148998041.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+  <div class="container">
+    <h1>💼 Painel de Acesso</h1>
 
-    <form class="formtest"action="https://api.sheetmonkey.io/form/vYxUmYrnP6iBLN4T9PF9B5">
+    <div class="tabs">
+      <button id="loginTab" class="active">Login</button>
+      <button id="cadastroTab">Cadastro</button>
+    </div>
 
-        <H1 id="titulo">Faça Login Abaixo!</H1>
+  
+    <div id="mensagem" class="mensagem"></div>
 
-    <label>
-        <span id="senhalogin">Usuario</span>
-        <input type="text" name="usuario" class="usuario">
-    </label>
+    <form id="loginForm" class="form ativo">
+      <label for="usuario">Usuário</label>
+      <input type="text" name="usuario" id="usuarioLogin" placeholder="Digite seu usuário">
 
-    <label>
-        <span id="senhalogin">Senha⠀</span>
-        <input type="text" name="senha" class="senha">
-    </label>
-    
-    <button  type="submit" class="botaoEnviar"></button>
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senhaLogin" placeholder="Digite sua senha">
 
+      <button type="submit" class="btn">Entrar</button>
+    </form>
 
- </form>
- 
-     <button onclick="window.location.href = 'cadastro.html'"" id="cadastro"></button>
+    <form id="cadastroForm" class="form">
+      <label for="novoUsuario">Novo Usuário</label>
+      <input type="text" id="novoUsuario" placeholder="Crie seu usuário">
 
+      <label for="novaSenha">Nova Senha</label>
+      <input type="password" id="novaSenha" placeholder="Crie sua senha">
 
-
-
- <script src="script.js"></script>
-
+      <button type="button" id="cadastrar" class="btn">Cadastrar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
