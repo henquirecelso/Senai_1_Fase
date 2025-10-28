@@ -9,7 +9,6 @@ body {
   color: #fff;
 }
 
-/* Painel geral (lado a lado) */
 .painel-resultado {
   display: flex;
   justify-content: space-between;
@@ -23,7 +22,6 @@ body {
   box-shadow: 0 0 20px #00ffff;
 }
 
-/* Painel de texto */
 .painel-texto {
   flex: 1;
   background-color: #181818;
@@ -58,7 +56,6 @@ body {
   background-color: #00cccc;
 }
 
-/* Painel do gráfico */
 .painel-grafico {
   flex: 1;
   background-color: #181818;
